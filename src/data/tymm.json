@@ -1,0 +1,287 @@
+{
+  "subjects": [
+    {
+      "ders": "Matematik",
+      "grades": {
+        "Hazırlık": [
+          "Nicelikler ve Değişimler",
+          "Mantıksal Çıkarım",
+          "Algoritma ve Bilişim",
+          "Geometrik Şekiller",
+          "İstatistiksel Araştırma Süreci"
+        ],
+        "9. Sınıf": [
+          "Sayılar",
+          "Nicelikler ve Değişimler",
+          "Algoritma ve Bilişim",
+          "Geometrik Şekiller",
+          "Eşlik ve Benzerlik",
+          "İstatistiksel Araştırma Süreci",
+          "Veriden Olasılığa"
+        ],
+        "10. Sınıf": [
+          "Sayılar",
+          "Nicelikler ve Değişimler",
+          "Sayma, Algoritma ve Bilişim",
+          "Geometrik Şekiller",
+          "Analitik İnceleme",
+          "İstatistiksel Araştırma Süreci",
+          "Veriden Olasılığa"
+        ],
+        "11. Sınıf": [
+          "Nicelikler ve Değişimler",
+          "Geometrik Şekiller",
+          "İstatistiksel Araştırma Süreci"
+        ],
+        "12. Sınıf": [
+          "Nicelikler ve Değişimler",
+          "Değişimin Matematiği",
+          "Geometrik Şekiller",
+          "Geometrik Cisimler",
+          "Hazır Veriler Üzerinde Çalışma"
+        ]
+      }
+    },
+    {
+      "ders": "Fizik",
+      "grades": {
+        "9. Sınıf": [
+          "Fizik Bilimi ve Kariyer Keşfi",
+          "Kuvvet ve Hareket",
+          "Akışkanlar",
+          "Enerji"
+        ],
+        "10. Sınıf": [
+          "Kuvvet ve Hareket",
+          "Enerji",
+          "Elektrik",
+          "Dalgalar"
+        ],
+        "11. Sınıf": [
+          "Kuvvet ve Hareket",
+          "Elektrik ve Manyetizma",
+          "Madde ve Doğası",
+          "Optik"
+        ],
+        "12. Sınıf": [
+          "Kuvvet ve Hareket",
+          "Enerji",
+          "Dalgalar",
+          "Madde ve Doğası"
+        ]
+      }
+    },
+    {
+      "ders": "Kimya",
+      "grades": {
+        "9. Sınıf": [
+          "Etkileşim",
+          "Çeşitlilik",
+          "Sürdürülebilirlik"
+        ],
+        "10. Sınıf": [
+          "Etkileşim",
+          "Çeşitlilik",
+          "Sürdürülebilirlik"
+        ],
+        "11. Sınıf": [
+          "Etkileşim",
+          "Çeşitlilik",
+          "Sürdürülebilirlik"
+        ],
+        "12. Sınıf": [
+          "Etkileşim",
+          "Çeşitlilik",
+          "Sürdürülebilirlik"
+        ]
+      }
+    },
+    {
+      "ders": "Biyoloji",
+      "grades": {
+        "9. Sınıf": [
+          "Yaşam",
+          "Organizasyon"
+        ],
+        "10. Sınıf": [
+          "Enerji",
+          "Ekoloji"
+        ],
+        "11. Sınıf": [
+          "Tepki",
+          "Homeostazi"
+        ],
+        "12. Sınıf": [
+          "Üreme",
+          "Gen"
+        ]
+      }
+    },
+    {
+      "ders": "Türk Dili ve Edebiyatı",
+      "grades": {
+        "Hazırlık": [
+          "Sanatın Dili",
+          "Sözün Peşinde",
+          "Okurun Dünyası",
+          "Sözün Ebrusu"
+        ],
+        "9. Sınıf": [
+          "Sözün İnceliği",
+          "Anlam Arayışı",
+          "Anlamın Yapı Taşları",
+          "Dilin Zenginliği"
+        ],
+        "10. Sınıf": [
+          "Sözün Ezgisi",
+          "Kelimelerin Ritmi",
+          "Dünden Bugüne",
+          "Nesillerin Mirası"
+        ],
+        "11. Sınıf": [
+          "Bir Diyeceğim Var!",
+          "Kültür Yolculuğu",
+          "Yaşamın İzinde",
+          "Hayatın Aynası"
+        ],
+        "12. Sınıf": [
+          "Benim Yolculuğum",
+          "Toplumun Ahengi",
+          "Hayatın Dengesi",
+          "Hayalimdeki Yarın"
+        ]
+      }
+    },
+    {
+      "ders": "Tarih",
+      "grades": {
+        "9. Sınıf": [
+          "Geçmişin İnşa Sürecinde Tarih",
+          "Eski Çağ Medeniyetleri",
+          "Orta Çağ Medeniyetleri"
+        ],
+        "10. Sınıf": [
+          "Türkistan’dan Türkiye’ye (1040-1299)",
+          "Beylikten Devlete Osmanlı (1299-1453)",
+          "Cihan Devleti Osmanlı (1453-1683)"
+        ],
+        "11. Sınıf": [
+          "Değişen Dünyada Osmanlı Devleti (1683-1789)",
+          "Dönüşüm Sürecinde Osmanlı (1789-1908)",
+          "Savaşlar Sarmalında Osmanlı (1908- 1918)"
+        ]
+      }
+    },
+    {
+      "ders": "Coğrafya",
+      "grades": {
+        "9. Sınıf": [
+          "Coğrafyanın Doğası",
+          "Mekânsal Bilgi Teknolojileri",
+          "Doğal Sistemler ve Süreçler",
+          "Beşerî Sistemler ve Süreçler",
+          "Ekonomik Faaliyetler ve Etkileri",
+          "Afetler ve Sürdürülebilir Çevre",
+          "Bölgeler, Ülkeler ve Küresel Bağlantılar"
+        ],
+        "10. Sınıf": [
+          "Coğrafyanın Doğası",
+          "Mekânsal Bilgi Teknolojileri",
+          "Doğal Sistemler ve Süreçler",
+          "Beşerî Sistemler ve Süreçler",
+          "Ekonomik Faaliyetler ve Etkileri",
+          "Afetler ve Sürdürülebilir Çevre",
+          "Bölgeler, Ülkeler ve Küresel Bağlantılar"
+        ],
+        "11. Sınıf": [
+          "Coğrafyanın Doğası",
+          "Mekânsal Bilgi Teknolojileri",
+          "Doğal Sistemler ve Süreçler",
+          "Beşerî Sistemler ve Süreçler",
+          "Ekonomik Faaliyetler ve Etkileri",
+          "Afetler ve Sürdürülebilir Çevre",
+          "Bölgeler, Ülkeler ve Küresel Bağlantılar"
+        ],
+        "12. Sınıf": [
+          "Coğrafyanın Doğası",
+          "Mekânsal Bilgi Teknolojileri",
+          "Doğal Sistemler ve Süreçler",
+          "Beşerî Sistemler ve Süreçler",
+          "Ekonomik Faaliyetler ve Etkileri",
+          "Afetler ve Sürdürülebilir Çevre",
+          "Bölgeler, Ülkeler ve Küresel Bağlantılar"
+        ]
+      }
+    },
+    {
+      "ders": "Felsefe",
+      "grades": {
+        "10. Sınıf": [
+          "Felsefenin Doğası",
+          "Felsefe, Mantık ve Argümantasyon",
+          "Varlık Felsefesi",
+          "Bilgi Felsefesi",
+          "Ahlak Felsefesi",
+          "Estetik ve Sanat Felsefesi",
+          "Siyaset Felsefesi",
+          "Din Felsefesi",
+          "Bilim Felsefesi"
+        ],
+        "11. Sınıf": [
+          "Çevre Sorunları ve Felsefe",
+          "Teknoloji ve Hayat",
+          "Akıl ve İnanç",
+          "Edebiyat ve Felsefe",
+          "Hayatın Anlamı",
+          "Hukuk ve Felsefe"
+        ]
+      }
+    },
+    {
+      "ders": "İngilizce",
+      "grades": {
+        "9. Sınıf": [
+          "Life In the Universe & Future"
+        ],
+        "10. Sınıf": [
+          "School Life & Education",
+          "Classroom Life & Learning",
+          "Personal Life & Well-being",
+          "Family Life & Home",
+          "Life In the Neighbourhood, City & Social Life",
+          "Life In the World & Culture",
+          "Life In Nature & Global Problems",
+          "Life In the Universe & the Future"
+        ],
+        "11. Sınıf": [
+          "School Life & Education",
+          "Classroom Life & Learning",
+          "Personal Life & Well-being",
+          "Family Life & Home",
+          "Life In the Neighbourhood, City & Social Life",
+          "Life In the World & Culture",
+          "Life In Nature & Global Problems",
+          "Life In the Universe & Future"
+        ],
+        "12. Sınıf": [
+          "School Life, Classroom Life & Education",
+          "Personal Life & Well-being",
+          "Family Life & Home",
+          "City & Social Life",
+          "Life In the Cultural And Natural World",
+          "Life In the Universe & Future"
+        ]
+      }
+    }
+  ],
+  "classes": [
+    "9-A",
+    "9-B",
+    "10-A",
+    "10-B",
+    "11-A",
+    "11-B",
+    "12-A",
+    "12-B"
+  ]
+}
