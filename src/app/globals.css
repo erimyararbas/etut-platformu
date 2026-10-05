@@ -1,0 +1,208 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+/* =============================================================================
+   Tasarım token'ları — oalbal.com prototipinden birebir alınmıştır.
+
+   İki katman var ve ikisi de gerekli:
+     1. Marka token'ları (--color-marka, --color-lacivert ...) — doğrudan
+        kullandığımız isimler. Okul markası değişince burası ve schools.tema
+        güncellenir.
+     2. shadcn'in anlamsal token'ları (--primary, --muted ...) — hazır
+        bileşenlerin okuduğu isimler. Aşağıda marka paletine BAĞLANMIŞTIR,
+        yoksa shadcn'in gri varsayılanları prototipin rengini bastırır.
+
+   Koyu tema yok: prototipte yoktu ve okulların kurumsal renkleriyle koyu tema
+   ayrı bir tasarım kararı gerektirir.
+   ============================================================================= */
+
+@theme {
+  /* Marka */
+  --color-marka: #e1241b;
+  --color-marka-koyu: #b81910;
+  --color-marka-acik: #fdecea;
+
+  --color-mavi: #0b57c2;
+  --color-mavi-koyu: #063e8e;
+  --color-mavi-acik: #e8f0fc;
+
+  --color-lacivert: #0e2a52;
+  --color-lacivert-acik: #eaeff7;
+
+  /* Metin ve yüzeyler */
+  --color-ink: #161a20;
+  --color-ink-2: #2a2f38;
+  --color-soluk: #6b7280;
+  --color-cizgi: #e7eaf0;
+  --color-zemin: #f3f5f9;
+
+  /* Durum */
+  --color-basarili: #1f9d5b;
+  --color-basarili-acik: #e6f4ec;
+  --color-uyari: #e0991a;
+  --color-uyari-acik: #fdf3e2;
+
+  /* Kontenjan çubuğu eşikleri (CapacityBar bileşeni kullanır) */
+  --color-doluluk-normal: #1f9d5b;
+  --color-doluluk-yakin: #e0991a;
+  --color-doluluk-dolu: #e1241b;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+
+  --radius-kart: 14px;
+  --radius-chip: 9px;
+}
+
+/* shadcn bileşenlerinin okuduğu anlamsal token'lar → marka paletine bağlı. */
+:root {
+  --radius: 0.75rem;
+
+  --background: #ffffff;
+  --foreground: #161a20;
+
+  --card: #ffffff;
+  --card-foreground: #161a20;
+  --popover: #ffffff;
+  --popover-foreground: #161a20;
+
+  --primary: #e1241b;
+  --primary-foreground: #ffffff;
+
+  --secondary: #e8f0fc;
+  --secondary-foreground: #0b57c2;
+
+  --muted: #f3f5f9;
+  --muted-foreground: #6b7280;
+
+  --accent: #eaeff7;
+  --accent-foreground: #0e2a52;
+
+  --destructive: #e1241b;
+  --destructive-foreground: #ffffff;
+
+  --border: #e7eaf0;
+  --input: #e7eaf0;
+  --ring: #0b57c2;
+
+  --chart-1: #0b57c2;
+  --chart-2: #e1241b;
+  --chart-3: #0e2a52;
+  --chart-4: #1f9d5b;
+  --chart-5: #e0991a;
+
+  --sidebar: #ffffff;
+  --sidebar-foreground: #161a20;
+  --sidebar-primary: #e1241b;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #fdecea;
+  --sidebar-accent-foreground: #b81910;
+  --sidebar-border: #e7eaf0;
+  --sidebar-ring: #0b57c2;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  html {
+    color-scheme: light;
+    @apply font-sans;
+  }
+
+  /* Uygulamanın zemini beyaz değil, prototipteki açık gri. */
+  body {
+    @apply text-foreground antialiased;
+    background: var(--color-zemin);
+  }
+}
+
+/* Mobil tarayıcıda alt navigasyonun güvenli alan payı */
+@supports (padding: env(safe-area-inset-bottom)) {
+  .alt-nav-payi {
+    padding-bottom: calc(0.5rem + env(safe-area-inset-bottom));
+  }
+}
+
+/* =============================================================================
+   Yazdırma — gelişim raporunun PDF'e dönüştüğü yer.
+
+   NEDEN SUNUCUDA PDF ÜRETMİYORUZ: PDF'in gömülü standart yazı tipleri
+   WinAnsi (cp1252) ile kodlanır ve o kümede ğ, Ğ, ş, Ş, ı, İ YOKTUR — Türkçe
+   cp1254'tür. pdfkit benzeri bir kütüphaneyle üretilen rapor, harici bir TTF
+   gömülmedikçe öğrenci adlarını bozuk gösterir. Başlıksız tarayıcı (Chromium)
+   ise sunucu paketine ~50 MB ekler ve her raporu saniyelerce bekletir.
+   Tarayıcının kendi yazdırması ikisinden de iyi sonuç veriyor: Türkçe sorunsuz,
+   ek bağımlılık yok ve telefonda da çalışıyor (iOS Paylaş → Yazdır,
+   Android Chrome → Yazdır → PDF olarak kaydet).
+   ============================================================================= */
+@media print {
+  @page {
+    size: A4;
+    margin: 14mm;
+  }
+
+  html,
+  body {
+    background: #fff;
+  }
+
+  /* Tarayıcılar baskıda arka planları varsayılan olarak atar. Rapordaki başlık
+     bandı ve devamsızlık rozetleri renksiz kalırsa rapor okunmaz olur. */
+  .rapor,
+  .rapor * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* Bir kutu iki sayfaya bölünmemeli; uzun tabloda başlık her sayfada tekrar
+     etmeli, yoksa ikinci sayfadaki sütunların ne olduğu anlaşılmaz. */
+  .kagit-blok {
+    break-inside: avoid;
+  }
+  .rapor thead {
+    display: table-header-group;
+  }
+  .rapor tr {
+    break-inside: avoid;
+  }
+}
